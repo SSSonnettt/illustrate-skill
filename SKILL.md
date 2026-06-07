@@ -35,7 +35,7 @@ metadata:
 
 - **环境变量**：`SILICONFLOW_API_KEY`、`R2_ACCOUNT_ID`、`R2_ACCESS_KEY_ID`、`R2_SECRET_ACCESS_KEY`、`R2_BUCKET_NAME`、`R2_PUBLIC_URL`
 - **Python 脚本**：`scripts/upload-r2.py`（需 `boto3`：`pip install boto3`）
-- **配置文件**：`types.yml`、`styles.yml`（Skill 同级目录）
+- **配置文件**：`references/types.yml`、`references/styles.yml`
 
 ## 工作流
 
@@ -45,7 +45,7 @@ metadata:
 
 1. **定位 Markdown 文件**：用户指定路径 > 搜索当前目录 `.md` 文件 > 询问用户
 2. **扫描 `[img:...]` 标记**：正则 `\[img:\s*([^\]]+)\]`
-3. **加载配置文件**：读取 `types.yml` 和 `styles.yml`
+3. **加载配置文件**：读取 `references/types.yml` 和 `references/styles.yml`
 4. **解析每个标记**：
 
 ```
@@ -85,9 +85,9 @@ metadata:
 1. **Prompt 组合**（四源合并）：
 
 ```
-types.yml → type.prompt_hint     "A structured diagram showing..."
+references/types.yml → type.prompt_hint     "A structured diagram showing..."
     +
-styles.yml → style.prompt_prefix "Clean 3D isometric illustration..."
+references/styles.yml → style.prompt_prefix "Clean 3D isometric illustration..."
     +
 [img] 主体 → 场景描述           "微服务请求链路图"
     +
@@ -160,7 +160,7 @@ Markdown 已更新，可直接分发或发布。
 | 缺少环境变量 | 提示用户设置，给出具体变量名和获取方式 |
 | API 返回错误 | 重试一次（间隔 3s），仍失败则跳过该图并告知用户 |
 | R2 上传失败 | 检查 boto3 是否安装、凭证是否正确，给出诊断 |
-| types.yml/styles.yml 不存在 | 使用内置默认值（tech-3d + scene） |
+| references/types.yml 或 references/styles.yml 不存在 | 使用内置默认值（tech-3d + scene） |
 | [img] 标记语法错误 | 展示原文，请用户修正 |
 
 ## 性能说明

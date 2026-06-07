@@ -67,7 +67,7 @@ export R2_PUBLIC_URL=https://cdn.yourdomain.com
 
 ### 自定义
 
-编辑 `types.yml` 和 `styles.yml` 添加你自己的类型和风格。详见 `references/style-guide.md`。
+编辑 `references/types.yml` 和 `references/styles.yml` 添加你自己的类型和风格。详见 `references/style-guide.md`。
 
 ## 依赖
 
