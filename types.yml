@@ -1,0 +1,51 @@
+# types.yml — 图片类型定义（"画什么结构"）
+# 每个类型定义 prompt_hint 和推荐风格组合
+
+scene:
+  label: "氛围场景"
+  prompt_hint: >
+    A standalone visual scene that captures the mood of the text.
+    No text or labels in the image. Evocative composition,
+    atmospheric lighting, immersive setting.
+  best_styles: [tech-3d, ink, japanese-film, watercolor, editorial]
+
+diagram:
+  label: "架构/流程图"
+  prompt_hint: >
+    A structured technical diagram showing relationships, flows,
+    or system architecture. Clean layout, clear hierarchy, logical
+    grouping of components. White or light background preferred.
+  best_styles: [tech-3d, blueprint, editorial]
+
+infographic:
+  label: "数据信息图"
+  prompt_hint: >
+    Data visualization with visual metaphors and comparisons.
+    Colorful and engaging, easy to understand at a glance.
+    Numbers and proportions shown visually.
+  best_styles: [tech-3d, blueprint, watercolor, editorial]
+
+comparison:
+  label: "对比示意图"
+  prompt_hint: >
+    Side-by-side or split comparison showing differences between
+    two or more concepts, approaches, or options. Visual parallel
+    structure, clear differentiation between sides.
+  best_styles: [tech-3d, blueprint, editorial]
+
+timeline:
+  label: "时间线"
+  prompt_hint: >
+    Chronological visualization showing progression, evolution,
+    or historical sequence. Clear temporal flow with distinct
+    milestones or phases labeled.
+  best_styles: [tech-3d, ink, blueprint, editorial]
+
+cover:
+  label: "封面图"
+  prompt_hint: >
+    A striking hero/title image that captures the essence of
+    the entire article. Bold composition, eye-catching, suitable
+    as a social media preview card. May include the article title
+    area but text should be minimal.
+  best_styles: [tech-3d, ink, japanese-film, watercolor, editorial]

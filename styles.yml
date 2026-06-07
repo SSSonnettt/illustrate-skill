@@ -1,0 +1,68 @@
+# styles.yml — 视觉风格定义（"画成什么样子"）
+# 每个风格包含模型配置、prompt 前缀、参数
+
+tech-3d:
+  label: "科技3D插画"
+  model: SD35
+  prompt_prefix: >
+    Clean 3D isometric illustration style, soft lighting, flat
+    design, modern tech aesthetic, smooth gradients, vibrant but
+    not oversaturated colors, rounded geometry
+  negative: "photorealistic, dark and moody, cluttered composition, sketch lines, hand-drawn, messy"
+  steps: 28
+  ratio: "16:9"
+
+ink:
+  label: "水墨画"
+  model: Tongyi
+  prompt_prefix: >
+    Chinese ink wash painting style (水墨画), misty atmosphere,
+    poetic composition, traditional aesthetic, visible brush
+    strokes, negative space, monochrome with subtle color accents
+  negative: "oil painting, 3D render, photographic, digital art, oversaturated, western painting style"
+  steps: 20
+  ratio: "3:4"
+
+japanese-film:
+  label: "日系胶片"
+  model: Flux
+  prompt_prefix: >
+    Japanese film photography style, fujifilm simulation, soft
+    organic grain, natural window light, muted pastel colors,
+    contemplative mood, shallow depth of field
+  negative: "digital art, 3D render, oversaturated, HDR, harsh lighting, artificial, cartoon"
+  steps: 30
+  ratio: "16:9"
+
+blueprint:
+  label: "蓝图线稿"
+  model: SD35
+  prompt_prefix: >
+    Blueprint style technical drawing, white lines and annotations
+    on dark blue background, architectural sketch aesthetic,
+    precise linework, grid overlay, measurement marks
+  negative: "colorful, photorealistic, organic shapes, hand-drawn rough sketch, messy"
+  steps: 25
+  ratio: "16:9"
+
+watercolor:
+  label: "水彩手绘"
+  model: SD35
+  prompt_prefix: >
+    Watercolor painting style, soft color washes bleeding into
+    each other, artistic illustration, hand-painted feel, gentle
+    paper texture visible
+  negative: "digital art, 3D render, sharp precise lines, photorealistic, vector graphics"
+  steps: 25
+  ratio: "16:9"
+
+editorial:
+  label: "杂志插画"
+  model: Flux
+  prompt_prefix: >
+    Editorial illustration style, sophisticated composition, bold
+    graphic elements, contemporary magazine aesthetic, conceptual
+    visual metaphor, clean and striking
+  negative: "photorealistic, cartoon style, childish, cluttered, amateur"
+  steps: 30
+  ratio: "16:9"
