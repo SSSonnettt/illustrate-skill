@@ -12,3 +12,6 @@ __pycache__/
 
 # Superpowers
 .superpowers/
+
+# Dev docs (not part of skill runtime)
+docs/
